@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+    sintropie-mockup:
+        build:
+            context: .
+            dockerfile: "./Dockerfile"        
+        container_name: sintropie-mockup
+        image: sintropie-mockup
+        ports:
+          - 80:80
+        restart: unless-stopped
